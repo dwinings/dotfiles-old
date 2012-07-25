@@ -19,6 +19,6 @@ URxvt*color15:	#ffffff
 URxvt*background: Black
 URxvt*foreground: lightgrey
 URxvt*fading: 30
-URxvt*font: xft:terminus:size=14
+URxvt*font: xft:terminus:size=12
 URxvt*scrollBar_right: true
 
