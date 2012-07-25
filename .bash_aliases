@@ -1,12 +1,3 @@
-alias vba=VisualBoyAdvance
-alias icecast='sudo icecast2 -b -c /etc/icecast2/icecast.xml'
-alias naut='nautilus --no-desktop'
-alias diablo2='aoss wine "/media/Arnesthas/Program Files/Diablo II/Diablo II.exe"'
-alias project64='aoss wine /home/wisp/.wine/drive_c/Program\ Files/Project64\ 1.6/Project64.exe'
-alias nwn2='pushd /home/wisp558/.wine/drive_c/Program\ Files/Atari/Neverwinter\ Nights\ 2/; WINEDEBUG="fixme-all" aoss wine nwn2main.exe; popd'
-alias weechat='weechat-curses irc://Wisp\|SSH:Durandal@irc.ecnet.org'
-alias trayer='trayer --edge top --align right --alpha 0 --transparent true --width 7 --height 10 --tint 0'
-alias minecraft='java -jar /usr/local/bin/Minecraft.jar'
-alias war3tft='WINEDEBUG=-all wine /home/wisp/.wine/drive_c/Warcraft\ III/Frozen\ Throne.exe '
-alias epsxe='/home/wisp/.scripts/epsxe.sh'
-alias westop='ssh julio@ohailisa.no-ip.org'
+alias kafka-logs="ssh vdl@192.168.1.40 tail -f /opt/vdl/kafka/kafka.out"
+alias almdor="ssh almdor.no-ip.org"
+alias almplay="mplayer http://almdor.no-ip.org:51234"
