@@ -15,3 +15,6 @@ set ofu=syntaxcomplete#Complete
 syntax on
 colorscheme molokai
 map <leader>n :NERDTreeToggle<enter>
+
+
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4

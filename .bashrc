@@ -16,3 +16,5 @@ if [ ${TERM} == "rxvt-unicode" ];
 then
  export TERM="xterm"
 fi
+
+PATH=$PATH:/home/wisp/.gem/ruby/1.9.1/bin
