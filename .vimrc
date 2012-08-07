@@ -16,5 +16,8 @@ syntax on
 colorscheme molokai
 map <leader>n :NERDTreeToggle<enter>
 
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['ruby', 'php'],
+                           \ 'passive_filetypes': ['puppet', 'java', 'c'] }
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4

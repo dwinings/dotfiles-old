@@ -18,3 +18,5 @@ then
 fi
 
 PATH=$PATH:/home/wisp/.gem/ruby/1.9.1/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
