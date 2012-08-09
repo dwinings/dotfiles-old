@@ -20,10 +20,11 @@ xfce4)
 	;;
 xmonad)
 	xsetroot -cursor_name left_ptr
-	trayer --edge top --align right --alpha 0 --transparent true --width 11 --height 11 --tint 0 &
+	trayer --edge top --align right --alpha 0 --transparent true --width 10 --height 11 --tint 0 &
 	parcellite &
-	feh --bg-fill /home/wisp/Wallpapers/Vaporeon.jpg
+	feh --bg-center /home/wisp/Wallpapers/metroid_gold.jpg
   pulseaudio --start
+  xcompmgr &
 	exec  xmonad
 	;;
 
@@ -35,10 +36,11 @@ kde4)
 	;;
 *)
   xsetroot -cursor_name left_ptr
-	trayer --edge top --align right --alpha 0 --transparent true --width 11 --height 11 --tint 0 &
+	trayer --edge top --align right --alpha 0 --transparent true --width 10 --height 11 --tint 0 &
 	parcellite &
-	feh --bg-fill /home/wisp/Wallpapers/Vaporeon.jpg
+	feh --bg-center /home/wisp/Wallpapers/metroid_gold.jpg
   pulseaudio --start
+  xcompmgr &
 	exec  xmonad
 	;;
 esac
