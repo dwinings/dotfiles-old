@@ -10,37 +10,27 @@ DEFAULT_SESSION=xmonad
 
 case $1 in
 fluxbox)
-	exec startfluxbox
-	;;
+  exec startfluxbox
+  ;;
 gnome)
-	exec ck-launch-session gnome-session
-	;;
+  exec ck-launch-session gnome-session
+  ;;
 xfce4)
-	exec startxfce4
-	;;
+  exec startxfce4
+  ;;
 xmonad)
-	xsetroot -cursor_name left_ptr
-	trayer --edge top --align right --alpha 0 --transparent true --width 10 --height 11 --tint 0 &
-	parcellite &
-	feh --bg-center /home/wisp/Wallpapers/metroid_gold.jpg
-  pulseaudio --start
-  xcompmgr &
-	exec  xmonad
-	;;
+  /home/wisp/.scripts/init_xmonad.sh &
+  exec xmonad
+  ;;
 
 compiz)
-	/usr/local/bin/startcompiz.sh
-	;;
+  /usr/local/bin/startcompiz.sh
+  ;;
 kde4)
-	exec startkde
-	;;
+  exec startkde
+  ;;
 *)
-  xsetroot -cursor_name left_ptr
-	trayer --edge top --align right --alpha 0 --transparent true --width 10 --height 11 --tint 0 &
-	parcellite &
-	feh --bg-center /home/wisp/Wallpapers/metroid_gold.jpg
-  pulseaudio --start
-  xcompmgr &
-	exec  xmonad
-	;;
+  /home/wisp/.scripts/init_xmonad.sh &
+  exec xmonad
+  ;;
 esac
