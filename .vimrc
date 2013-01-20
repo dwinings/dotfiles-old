@@ -22,11 +22,16 @@ syntax on
 set foldmethod=indent
 set nofoldenable
 
+set wildmode=longest,list
+set wildmenu
+
 colorscheme molokai
 set guifont=terminus
 
 map <leader>n :NERDTreeToggle<enter>
 map <leader>s :w<enter>:SyntasticCheck<enter>:Errors<enter>
+nmap <c-h> <c-w>h
+nmap <c-l> <c-w>l
 
 
 let g:SuperTabMappingForward = '<c-space>'
@@ -35,8 +40,9 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['ruby', 'php'],
                            \ 'passive_filetypes': ['puppet', 'java', 'c'] }
 
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
+let g:syntastic_error_symbol='E'
+let g:syntastic_warning_symbol='W'
+
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
 autocmd FileType ruby   setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2

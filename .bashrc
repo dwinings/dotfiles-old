@@ -16,3 +16,6 @@ if [ ${TERM} == "rxvt-unicode" ];
 then
  export TERM="xterm"
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+set -o vi

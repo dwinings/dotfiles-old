@@ -24,7 +24,6 @@ main = do
     xmonad $ defaultConfig
         { manageHook =  manageDocks <+> myManageHook <+> manageHook defaultConfig
 	, terminal = "urxvt"
-        , modMask = mod4Mask
 	, startupHook = setWMName "LG3D"
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
         , logHook = (dynamicLogWithPP $ xmobarPP

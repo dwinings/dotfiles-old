@@ -1,0 +1,30 @@
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/minibufexpl"]
+	path = .vim/bundle/minibufexpl
+	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule "/home/wisp/.vim/bundle/rainbow-parens"]
+	path = /home/wisp/.vim/bundle/rainbow-parens
+	url = git://github.com/kien/rainbow_parentheses.vim.git
+[submodule "/home/wisp/.vim/bundle/vim-colors-molokai"]
+	path = /home/wisp/.vim/bundle/vim-colors-molokai
+	url = git://github.com/tomasr/molokai.git
+[submodule "/home/wisp/.vim/bundle/vim-clojure"]
+	path = /home/wisp/.vim/bundle/vim-clojure
+	url = git://github.com/vim-scripts/VimClojure.git
+[submodule "/home/wisp/.vim/bundle/vim-colors-solarized"]
+	path = /home/wisp/.vim/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/ack"]
+	path = .vim/bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/easymotion"]
+	path = .vim/bundle/easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
