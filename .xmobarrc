@@ -3,16 +3,18 @@ Config { font = "-*-terminus-medium-*-*-*-*-*-72-72-*-*-*-u"
        , fgColor = "grey"
        , position = TopW L 100
        , lowerOnStart = True
-       , commands = [ Run Network "eth0" ["-L","200","-H","1000","--normal","green","--high","red"] 10
+       , commands = [ Run Network "wlan0" ["-L","200","-M","1000", "-H", "3000","--normal","green","--high","red"] 10
                     , Run Weather "EDGR" ["-t"," <tempC>C","-L","0","-H","20","--normal","green","--high","red","--low","lightblue"] 36000
                     , Run Cpu ["-L","20","-H","70","--normal","green","--high","red"] 10
+                    , Run CoreTemp [ "-t", "Temp: <core0>-<core1>C", "-L", "70", "-H", "95"] 10
                     , Run Memory ["-t","Mem: <usedratio>%", "green"] 10
                     , Run Swap [] 10
                     , Run Com "uname" ["-o", "-m", "-r"] "" 36000
                     , Run Date "%a %b %_d %k:%M" "date" 10
+                    , Run CommandReader "ruby ~/.scripts/last_said_mon.rb" "irc"
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% | %eth0%    <fc=#ee9a00>%date%</fc>     %uname%"
+       , template = "%StdinReader% }{ %cpu% | %memory% | %coretemp% | %wlan0%    <fc=#ee9a00>%date%</fc>     %irc%"
        }
